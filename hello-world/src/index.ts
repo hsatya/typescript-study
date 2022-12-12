@@ -263,5 +263,59 @@ const [randomName, randomNum] = getRandom<string, number>(names, numbers);
 console.log(ans);
 console.log(randomName, randomNum);
 
+
+///////////////////////////////////////////////////////////
+// let printName: (name: string) => never;
+
+// type Person = {
+//   name: string;
+//   age?: number;
+// };
+
+// interface Person {
+//   name: string;
+//   age?: number;
+// }
+
+// let person1: Person = {
+//   name: "Harshit",
+//   age: 36,
+// };
+
+// let lotsOfPeople: Person[] = [
+//   {
+//     name: "Eve",
+//   },
+//   {
+//     name: "Simon",
+//     age: 35,
+//   },
+// ];
+
+// type X = {
+//   a: string;
+//   b: number;
+// };
+
+// type Y = X & {
+//   c: string;
+//   d: number;
+// };
+
+// let y: Y = {
+//   c: "sdddd",
+//   d: 25,
+// };
+
+interface Person {
+  name: string;
+  age?: number;
+}
+
+interface Guy extends Person {
+  profession: string;
+}
+
+
 // Generic Array Systax
 const texts: Array<string> = ["A", "B"];
